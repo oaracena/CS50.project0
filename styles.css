@@ -31,14 +31,6 @@ body {
     margin-bottom: 30px;
 }
 
-#ordered {
-    color: firebrick;
-}
-
-#unordered {
-    color: darkgreen;
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -51,6 +43,18 @@ body {
     }
 }
 
+@media (min-width: 900px) {
+    .col-md ol li {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 899px) {
+    .col-md ol li {
+        font-size: small;
+    }
+}
+
 .col-md li {
     font-weight: bold;
 }
@@ -58,4 +62,18 @@ body {
 .col-md ol li {
     font-style: italic;
     font-weight: normal;
+}
+
+.tabla th {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    background-color: darkblue;
+    color: lightgray;
+    padding: 10px;
+}
+
+.tabla td {
+    border: 1px solid darkblue;
+    border-collapse: collapse;
+    padding: 10px;
 }
